@@ -1,0 +1,64 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+export default function Portfolio() {
+  return (
+    <main className="min-h-screen bg-white text-black p-8 font-serif">
+      <section className="mb-12">
+        <h1 className="text-4xl font-bold text-orange-600">Aditi Phadnis</h1>
+        <p className="text-xl mt-2">Product Manager</p>
+        <p className="text-md text-gray-600 mt-1">
+          Agentic AI | Gen AI | RPA | LLMs
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold text-orange-500 mb-4">Zomato Ads Platform</h2>
+        <Card className="mb-6">
+          <CardContent className="p-4">
+            <p><strong>Situation:</strong> Zomato wanted to increase revenue by offering in-app ads aligned with business goals and partner visibility.</p>
+            <p><strong>Task:</strong> Lead the development of a scalable ad platform using CPC, CPM, CPD models.</p>
+            <p><strong>Action:</strong> Collaborated with Flipkart/Snapdeal, integrated Facebook/Instagram, built dashboards, used AppsFlyer & GA to track ROI.</p>
+            <p><strong>Result:</strong> +30% revenue, significant ROI for partners, scalable monetization model.</p>
+            <Button className="mt-4" asChild>
+              <a href="https://zomato-ad-craft-pilot.lovable.app/" target="_blank" rel="noopener noreferrer">
+                View Project
+              </a>
+            </Button>
+          </CardContent>
+        </Card>
+
+        <h2 className="text-2xl font-semibold text-orange-500 mb-4">News Summarizer App</h2>
+        <Card className="mb-6">
+          <CardContent className="p-4">
+            <p>AI-powered app using OpenAI's Assistant API and NewsAPI, with fallback to Tavily API. Built on Streamlit for quick news summaries.</p>
+            <Button className="mt-4" asChild>
+              <a href="https://news-summarize.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                View App
+              </a>
+            </Button>
+          </CardContent>
+        </Card>
+
+        <h2 className="text-2xl font-semibold text-orange-500 mb-4">Query Builder – DataFlow Query Weaver</h2>
+        <Card className="mb-6">
+          <CardContent className="p-4">
+            <p>No-code tool to build real-time queries from a database. Supports filtering, joins, and live result rendering. Built to reduce analyst dependencies.</p>
+            <Button className="mt-4" asChild>
+              <a href="https://preview--dataflow-query-weaver.lovable.app/" target="_blank" rel="noopener noreferrer">
+                View Project
+              </a>
+            </Button>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="mt-12">
+        <h2 className="text-2xl font-semibold text-orange-500 mb-4">Contact</h2>
+        <p>Email: <a href="mailto:aditi.phadnis@gmail.com" className="text-blue-600">aditi.phadnis@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/aditi-phadnis/" className="text-blue-600">linkedin.com/in/aditi-phadnis</a></p>
+      </section>
+    </main>
+  );
+}
